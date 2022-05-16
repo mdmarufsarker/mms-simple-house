@@ -6,7 +6,41 @@
 
 - Create Some File's
 
-        touch .gitignore LICENSE main.go README.md scss/style.scss
+        touch .gitignore LICENSE main.go README.md scss/style.scss scss/abstracts/_functions.scss scss/abstracts/_mixins.scss scss/abstracts/_variables.scss scss/base/_base.scss scss/base/_utilities.scss scss/layout/_header.scss scss/layout/_footer.scss scss/pages/_index.scss
+
+- Add those lines in the style.scss file
+
+        @import "abstracts/functions";
+        @import "abstracts/mixins";
+        @import "abstracts/variables";
+        @import "base/base";
+        @import "base/utilities";
+        @import "layout/header";
+        @import "layout/footer";
+        @import "pages/home";
+
+- Your Style color variable should like this in the scss/_variables.scss file
+
+        $color-white: #fff;
+
+- Add those lines in the scss/_base.scss file
+
+        *,
+        *::before,
+        *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        
+- Add those lines in the scss/_utilities.scss file
+
+        a{
+            text-decoration: none;
+        }
 
 - Now Initialize go
 
