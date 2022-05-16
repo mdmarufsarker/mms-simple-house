@@ -1,0 +1,131 @@
+/* Section-2 Start*/
+.section-2-about {
+  margin: 5rem;
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 8rem;
+    grid-column-gap: 2rem;
+    justify-content: space-around;
+    margin-top: 3rem;
+    .card {
+      display: flex;
+      .right-part {
+        padding: 0 2rem;
+        h3 {
+          font-weight: 300;
+          font-size: 2.5rem;
+          color: $color-tm-name;
+        }
+        h4 {
+          font-weight: 400;
+          font-size: 1.8rem;
+          padding: 1rem 0;
+          color: $color-pink-dark;
+        }
+        p {
+          color: $color-desc;
+          margin: 2rem 0;
+          line-height: 3rem;
+        }
+        .icons {
+          img {
+            height: 3rem;
+            width: 3rem;
+            padding: 0.5rem;
+            transition: all 0.5s;
+            &:hover {
+              position: relative;
+              border-radius: 1rem;
+              color: #fff;
+              background-color: $color-tm-name;
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*ABOUT SECTION-3 // This is section-2*/
+.section-3-about {
+  padding: 0 2rem;
+  margin-top: 3rem;
+  width: 100%;
+
+  &__long-img {
+    background-image: url(../../public/wallpaper/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: content;
+    background-attachment: fixed;
+    height: 25rem;
+  }
+}
+
+/*ABOUT SECTION-4 //This is section-3*/
+.section-4 {
+  padding: 4rem 7rem 2rem;
+  margin-top: 3rem;
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &-item {
+      color: $color-grey;
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+    &-feature {
+      img {
+        height: 7rem;
+        width: 7em;
+        margin-bottom: 3rem;
+      }
+      &-description {
+        margin-bottom: 3rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+/*ABOUT SECTION-4*/
+.section-5 {
+  padding: 0 3.5rem;
+  padding-top: 3rem;
+  margin-top: 3rem;
+
+  &-row {
+    display: flex;
+    align-items: center;
+
+    &__left-part {
+      height: 100%;
+      margin-right: 3rem;
+    }
+
+    &__right-part {
+      flex: 0 0 50%;
+
+      &-heading {
+        margin-bottom: 2.5rem;
+        font-size: 3rem;
+        font-weight: 400;
+        color: $color-blue-lite;
+      }
+
+      &-paragraph-1,
+      &-paragraph-2 {
+        margin-bottom: 2.5rem;
+        font-weight: 400;
+        line-height: 27px;
+        color: $color-grey;
+      }
+    }
+  }
+}

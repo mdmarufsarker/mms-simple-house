@@ -1,0 +1,29 @@
+{
+  "name": "mms-simple-house",
+  "version": "1.0.0",
+  "description": "Simple House Web App",
+  "main": "main.go",
+  "scripts": {
+    "compile:scss": "node-sass ./scss/style.scss -o ./public/ -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmarufsarker/mms-simple-house.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "golang",
+    "npm"
+  ],
+  "author": "Md. Maruf Sarker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdmarufsarker/mms-simple-house/issues"
+  },
+  "homepage": "https://github.com/mdmarufsarker/mms-simple-house#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
